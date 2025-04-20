@@ -26,7 +26,7 @@ export default function App() {
         <Stack.Screen
           name="AllCities"
           component={AllCities}
-          options={{ title: 'Detailed Weather Data' }}
+          options={{ title: 'Detailed Weather Data (2022)' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

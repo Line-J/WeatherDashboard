@@ -74,7 +74,6 @@ function AllCities() {
           </View>
         </View>
 
-        {/* FlatList to display cities */}
         <FlatList
           data={data}
           keyExtractor={(item, index) => index.toString()}

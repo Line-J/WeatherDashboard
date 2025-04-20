@@ -27,9 +27,15 @@ export default function WelcomeScreen({ navigation }) {
             >
             <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
-        <Text style={styles.poweredBy}>
-        Powered by Snowflake, React.js, Node.js, and Express.js
-        </Text>
+        <View style={styles.poweredByContainer}>
+          <Text style={styles.poweredByText}>
+            Powered by
+          </Text>
+          <Image
+            source={require('./Pictures/Snowflake_Logo.svg.png')} // Make sure this path is correct
+            style={styles.poweredByLogo}
+          />
+        </View>
 
       </View>
     </LinearGradient>
@@ -89,13 +95,26 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  poweredBy: {
+  poweredByContainer: {
     position: 'absolute',
     bottom: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 20,
+    gap: 8,
+  },
+  
+  poweredByLogo: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
+  },
+  
+  poweredByText: {
     fontSize: 12,
     color: '#FAEBD7',
-    textAlign: 'center',
-    style: 'italic',
+    fontStyle: 'italic',
   },
 });
 
