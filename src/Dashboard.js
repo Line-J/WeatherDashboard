@@ -124,7 +124,7 @@ function Dashboard() {
         {coldestCities.length > 0 &&
           renderChart(
             coldestCities,
-            'Top 5 Coldest Cities 2022',
+            'Top 5 Coldest Cities (2022)',
             require('./Pictures/Cold-removebg-preview.png'),
             false
           )}

@@ -20,7 +20,7 @@ export default function WelcomeScreen({ navigation }) {
             <Text style={styles.title}>Weather</Text>
             <Text style={styles.title1}>Dash</Text>
         </View>
-        <Text style={styles.subtitle}>Get weather updates for different cities with an easy-to-use interface. </Text>
+        <Text style={styles.subtitle}>Get historical weather data from year 2022 via Snowflake Data Cloud API </Text>
         <TouchableOpacity 
             style={styles.buttonContainer} 
             onPress={() => navigation.navigate('Dashboard')}
